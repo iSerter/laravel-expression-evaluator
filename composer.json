@@ -1,6 +1,7 @@
 {
   "name": "iserter/laravel-expression-evaluator",
   "description": "Evaluate string expressions in PHP without eval() function - laravel package",
+  "keywords": ["expression evaluator", "math", "math parser"],
   "license": "MIT",
   "authors": [
     {
@@ -12,7 +13,6 @@
     "php": ">=5.3.0",
     "illuminate/support": "~5.0"
   },
-  "minimum-stability": "stable",
   "autoload": {
     "psr-4": {
       "Iserter\\ExpressionEvaluator\\": "src/"
