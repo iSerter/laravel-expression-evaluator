@@ -2,15 +2,15 @@
 
 namespace Iserter\ExpressionEvaluator;
 
-use ExpressionEvaluator\Operators\Arithmetic\Addition;
-use ExpressionEvaluator\Operators\Arithmetic\Division;
-use ExpressionEvaluator\Operators\Arithmetic\Multiplication;
-use ExpressionEvaluator\Operators\Arithmetic\Subtraction;
-use ExpressionEvaluator\Operators\Comparison\Equal;
-use ExpressionEvaluator\Operators\Comparison\GreaterThan;
-use ExpressionEvaluator\Operators\Comparison\LessThan;
-use ExpressionEvaluator\Operators\Logical\AndOperator;
-use ExpressionEvaluator\Operators\Logical\OrOperator;
+use Iserter\ExpressionEvaluator\Operators\Arithmetic\Addition;
+use Iserter\ExpressionEvaluator\Operators\Arithmetic\Division;
+use Iserter\ExpressionEvaluator\Operators\Arithmetic\Multiplication;
+use Iserter\ExpressionEvaluator\Operators\Arithmetic\Subtraction;
+use Iserter\ExpressionEvaluator\Operators\Comparison\Equal;
+use Iserter\ExpressionEvaluator\Operators\Comparison\GreaterThan;
+use Iserter\ExpressionEvaluator\Operators\Comparison\LessThan;
+use Iserter\ExpressionEvaluator\Operators\Logical\AndOperator;
+use Iserter\ExpressionEvaluator\Operators\Logical\OrOperator;
 
 
 abstract class Expression {
