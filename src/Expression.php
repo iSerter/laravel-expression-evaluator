@@ -10,6 +10,7 @@ use Iserter\ExpressionEvaluator\Operators\Arithmetic\Subtraction;
 use Iserter\ExpressionEvaluator\Operators\Comparison\Equal;
 use Iserter\ExpressionEvaluator\Operators\Comparison\GreaterThan;
 use Iserter\ExpressionEvaluator\Operators\Comparison\LessThan;
+use Iserter\ExpressionEvaluator\Operators\Comparison\NotEqual;
 use Iserter\ExpressionEvaluator\Operators\Logical\AndOperator;
 use Iserter\ExpressionEvaluator\Operators\Logical\OrOperator;
 
@@ -62,6 +63,8 @@ abstract class Expression {
                 return new LessThan($value);
             case Equal::SYMBOL:
                 return new Equal($value);
+            case NotEqual::SYMBOL:
+                return new NotEqual($value);
             default:
                 throw new \InvalidArgumentException('Undefined Value ' . $value);
         }
