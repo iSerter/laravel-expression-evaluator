@@ -8,7 +8,9 @@ use Iserter\ExpressionEvaluator\Operators\Arithmetic\Modulus;
 use Iserter\ExpressionEvaluator\Operators\Arithmetic\Multiplication;
 use Iserter\ExpressionEvaluator\Operators\Arithmetic\Subtraction;
 use Iserter\ExpressionEvaluator\Operators\Comparison\Equal;
+use Iserter\ExpressionEvaluator\Operators\Comparison\GreaterOrEqual;
 use Iserter\ExpressionEvaluator\Operators\Comparison\GreaterThan;
+use Iserter\ExpressionEvaluator\Operators\Comparison\LessOrEqual;
 use Iserter\ExpressionEvaluator\Operators\Comparison\LessThan;
 use Iserter\ExpressionEvaluator\Operators\Comparison\NotEqual;
 use Iserter\ExpressionEvaluator\Operators\Logical\AndOperator;
@@ -59,6 +61,10 @@ abstract class Expression {
                 return new OrOperator($value);
             case GreaterThan::SYMBOL:
                 return new GreaterThan($value);
+            case GreaterOrEqual::SYMBOL:
+                return new GreaterOrEqual($value);
+            case LessOrEqual::SYMBOL:
+                return new LessOrEqual($value);
             case LessThan::SYMBOL:
                 return new LessThan($value);
             case Equal::SYMBOL:

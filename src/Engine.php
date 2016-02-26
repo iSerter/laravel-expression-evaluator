@@ -16,12 +16,14 @@ class Engine {
     protected $variables = array();
 
     public function evaluate($string) {
+        $tokens = $this->tokenize($string);
         $stack = $this->parse($string);
         return $this->run($stack);
     }
 
     public function parse($string) {
         $tokens = $this->tokenize($string);
+
         $output = new \SplStack();
         $operators = new \SplStack();
         foreach ($tokens as $token) {
