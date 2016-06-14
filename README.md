@@ -1,7 +1,6 @@
 # laravel-expression-evaluator
-Evaluates string expressions for laravel
+Evaluates string expressions
+
+#usage 
 
 
-# TODO
-
-- require iserter/expression-evaluator as a dependency and clear the unnecessary code from this repo. 
